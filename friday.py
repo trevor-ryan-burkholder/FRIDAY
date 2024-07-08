@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, request,render_template
 from openai import OpenAI
 
-app = Flask(__friday__)
+app = Flask(__name__)
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
