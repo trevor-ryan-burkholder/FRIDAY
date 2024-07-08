@@ -1,9 +1,9 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request,render_template
 from openai import OpenAI
 
-app = Flask(__name__)
+app = Flask(__friday__)
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
@@ -11,7 +11,7 @@ client = OpenAI(api_key=api_key)
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return render_template('index.html')
 
 # Endpoint for chat interaction
 @app.route('/chat', methods=['POST'])
