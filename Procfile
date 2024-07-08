@@ -1,1 +1,1 @@
-web: gunicorn app:friday
+web: gunicorn friday:app
