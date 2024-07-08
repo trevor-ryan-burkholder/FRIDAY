@@ -1,21 +1,16 @@
-from flask import Flask, request, jsonify, render_template
-from openai import OpenAI
 import os
 from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
+from flask import Flask, jsonify, request
+from openai import OpenAI
 
 app = Flask(__name__)
 
-# Set OpenAI API key
+load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
-# Index route to serve the main page
 @app.route('/')
 def index():
-    # return render_template('index.html')
     return "Hello, World!"
 
 # Endpoint for chat interaction
