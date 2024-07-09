@@ -13,8 +13,8 @@ $(document).ready(function() {
                 data: JSON.stringify({ message: message }),
                 success: function(response) {
                     var chatBox = $('#chat-container');
-                    chatBox.append('<p><strong>You:</strong> ' + message + '</p>');
-                    var responseElement = $('<p><strong>FRIDAY:</strong> <span class="response-text"></span></p>');
+                    chatBox.append('<p class="message.user"><strong>You:</strong> ' + message + '</p>');
+                    var responseElement = $('<p class="message.friday"><strong>FRIDAY:</strong> <span class="response-text"></span></p>');
                     chatBox.append(responseElement);
                     $('#loading-indicator').hide(); // Hide the loading indicator
                     $('#message').val('');

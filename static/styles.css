@@ -1,42 +1,55 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #333;
+}
+
+.header {
+    background-color: #AF1C2E;
+}   
+
+pre, code {
+    color: #15ff00be;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .chat-container {
-    max-width: 600px;
+    color: #fff;
     margin: auto;
 }
 
-.chat-box {
-    border: 1px solid #ced4da;
+.chat-container {
     padding: 10px;
     height: 400px;
     overflow-y: scroll;
-    background-color: #ffffff;
+    background-color: #000;
 }
 
-.chat-box .message {
+.chat-container .message {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
 }
 
-.chat-box .message.user {
-    background-color: #ffcdd2;
+.chat-container .message.user {
+    color: #fff;
     text-align: right;
 }
 
-.chat-box .message.friday {
-    background-color: #f44336;
-    color: #ffffff;
+.chat-container .message.friday {
+    color: #AF1C2E;
 }
 
 input[type="text"] {
-    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 button[type="submit"] {
+    border-top-right-radius: 0;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+}
+
+.copy {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
 }
