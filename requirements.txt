@@ -1,4 +1,5 @@
 Flask
+flask-session
 gunicorn
 python-dotenv
 openai
