@@ -1,5 +1,5 @@
 body {
-    background-color: #333;
+    background-color: #AF1C2E;
 }
 
 .header {
@@ -18,7 +18,7 @@ pre, code {
 
 .chat-container {
     padding: 10px;
-    height: 400px;
+    height: 600px;
     overflow-y: scroll;
     background-color: #000;
 }
@@ -48,8 +48,16 @@ button[type="submit"] {
     border-top-left-radius: 0;
 }
 
-.copy {
+.footer {
     color: #fff;
     margin-top: 10px;
     text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .logo {
+    width: 8rem;
 }
